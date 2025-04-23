@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+$map-colors:(
+red:red,
+purple:#5D5DFF,
+white:white,
+grey:#9BA9B4,
+green:#36A269,
+black:black,
+yellow:yellow
+);
+@each $name,$colors in $map-colors{
+    .tc-#{$name}{
+        color:$colors;
+    }
+}
+@each $name,$colors in $map-colors{
+    .bgc-#{$name}{
+    background-color:$colors;
+    }
+}
+@each $name,$colors in $map-colors{
+    .brc-#{$name}{
+    border-color:$colors;
+    }
+}
+$map-sizes:(
+    px4:4px,
+    px8:8px,
+    px12:12px,
+    px16:16px,
+    px20:20px,
+    px24:24px,
+    px28:28px,
+    px32:32px,
+    px36:36px,
+    px40:40px,
+    px44:44px,
+    px48:48px,
+    px52:52px,
+    px56:56px,
+    px60:60px,
+    px64:64px,
+    px68:68px,
+    px72:72px,
+    px76:76px,
+    px80:80px,
+    px84:84px,
+    px88:88px,
+    px92:92px,
+    px96:96px,
+    px100:100px,
+    px120:120px,
+    px140:140px,
+    px160:160px,
+    px180:180px,
+    px200:200px
+);
+@each $name,$sizes in $map-sizes{
+    .ts-#{$name}{
+        font-size: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .mle-#{$name}{
+        margin-left: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .mri-#{$name}{
+        margin-right: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .mtp-#{$name}{
+        margin-top: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .mbt-#{$name}{
+        margin-bottom: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .ple-#{$name}{
+        padding-left: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .pri-#{$name}{
+        padding-right: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .ptp-#{$name}{
+        padding-top: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .pbt-#{$name}{
+        padding-bottom: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .width-#{$name}{
+        width: $sizes;
+    }
+}
+@each $name,$sizes in $map-sizes{
+    .height-#{$name}{
+        height:$sizes;
+    }
+}
+$map-weight:(
+    n100:100,
+    n200:200,
+    n300:300,
+    n400:400,
+    n500:500,
+    n600:600,
+    n700:700,
+    n800:800,
+    n900:900,
+    n1000:1000,
+);
+@each $name,$sizes in $map-weight{
+    .fw-#{$name}{
+        font-weight:$sizes;
+    }
+}
+$map-textalign:(
+    st:start,
+    cn:center,
+    ed:end,
+    spev:space-evenly,
+    spar:space-around,
+    spbet:space-between
+);
+@each $name,$talign in $map-textalign{
+    .ta-#{$name}{
+    text-align:$talign;
+    }
+}
+@each $name,$talign in $map-textalign{
+    .jusc-#{$name}{
+    justify-content:$talign;
+    }
+}
+@each $name,$talign in $map-textalign{
+    .alignit-#{$name}{
+    align-items:$talign;
+    }
+}
+$map-display:(
+    f:flex,
+   b:block,
+   i:inline,
+    g:grid,
+    c:column,
+    r:row
+);
+@each $name,$displays in $map-display{
+    .d-#{$name}{
+    display:$displays;
+    }
+}
+@each $name,$displays in $map-display{
+    .fd-#{$name}{
+    flex-direction:$displays;
+    }
+}
+.l{
+    display: inline;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 2, 24);
+}
+.top{
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.bt1{
+    padding: 15px 20px;
+}
+.p2{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    .p21{
+        width: 30%;
+        
+    }
+
+}
+.bt2{
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 42%;
+}
+.p3{
+    width: 90%;
+    margin: auto;
+    display: flex;
+   .l{
+    width: 50%;
+   }
+}
+.p4{width: 90%;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    .l1{
+        
+        width: 50%;
+        input{
+            width: 300px;
+            height: 48px;
+            background-color: #4B4ACF;
+            color: white;
+            border: none;
+        }
+        button{
+            background-color: white;
+            color: #5D5DFF;
+            height: 48px;
+            width: 239px;
+        }
+
+    }
+
+}
